@@ -3,13 +3,13 @@
 
 @mixin desktop-width-limit {
   margin: auto;
-  width: 108.4rem; // 1020 px + 2* side paddings for tablet
+  width: 144rem; // 1020 px + 2* side paddings for tablet
 }
 
 @mixin breakpoint-margin-limits {
   padding: 0 $side-padding-mobile;
   @include tablet {
-    max-width: 108.4rem; // 1020 px + 2* side paddings for tablet
+    max-width: 144rem; // 1020 px + 2* side paddings for tablet
     padding: 0 $side-padding-tablet;
     margin: auto;
   }
