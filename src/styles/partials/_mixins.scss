@@ -15,7 +15,7 @@
   }
 
   @include desktop {
-    @include desktop-width-limit;
+    // @include desktop-width-limit;
   }
 }
 

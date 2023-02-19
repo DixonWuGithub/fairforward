@@ -1,0 +1,30 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/media" as *;
+
+
+.educator {
+    &__card {
+        height: 38rem;
+        width: 26.5rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 2rem;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        color: #AEAEAE;
+        font-weight: 500;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__name {
+        color: $primaryColor3;
+        margin-left: 2rem;
+    }
+}

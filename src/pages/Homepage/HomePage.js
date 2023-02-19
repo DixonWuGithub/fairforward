@@ -35,7 +35,7 @@ function HomePage() {
                             <div className="hero__botton-container">
                                 <Link to="/signup">
                                     <button className="button button--hero">
-                                        CTA
+                                        Join Now
                                     </button>
                                 </Link>
                             </div>
@@ -55,22 +55,22 @@ function HomePage() {
                         </h2>
                         <div className="home-intro__top">
                             <div className="home-intro__top__left">
-                                <img src={board} alt="" />
+                                <img className="home-intro__image" src={board} alt="" />
                             </div>
                             <div className="home-intro__top__right">
                                 <Link to="/explore" >
-                                    <img src={forMentee} alt="" />
+                                    <img className="home-intro__text" src={forMentee} alt="" />
                                 </Link>
                             </div>
                         </div>
                         <div className="home-intro__bottom">
                             <div className="home-intro__bottom__left">
                                 <Link to="/about" >
-                                    <img src={forMentor} alt="" />
+                                    <img className="home-intro__text" src={forMentor} alt="" />
                                 </Link>
                             </div>
                             <div className="home-intro__bottom__right">
-                                <img src={desk} alt="" />
+                                <img className="home-intro__image" src={desk} alt="" />
                             </div>
                         </div>
                     </div>
@@ -86,12 +86,9 @@ function HomePage() {
                             <img className="testimonials__card" src={homecard1} />
                             <img className="testimonials__card" src={homecard2} />
                         </div>
-
                     </div>
                 </div>
             </section>
-
-
         </>
     )
 }

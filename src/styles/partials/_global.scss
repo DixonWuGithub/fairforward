@@ -8,17 +8,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  
-  &--header{
+
+  &--header {
     background-color: $primaryColor1;
     align-items: center;
   }
 
-  &--home-hero{
+  &--home-hero {
     background-color: $primaryColor1;
   }
 
-  &--home-intro{
+  &--home-intro {
     background-color: $primaryColor3;
   }
 
@@ -30,20 +30,47 @@
     background-repeat: none;
   }
 
-  &--footer{
+  &--footer {
     background-color: $primaryColor1;
     margin-top: auto;
   }
 
-  &--about-intro{
+  &--about-intro {
     background-color: $primaryColor3;
   }
 
-  &--about-hero{
-    height:26rem;
+  &--about-hero {
+    height: 26rem;
     background-image: url("../../assets/images/about-hero-image.png");
+    background-color: $primaryColor3;
     background-size: cover;
+    background-blend-mode: multiply;
     background-position: 0 55%;
+  }
+
+  &--motivation {
+    background-color: $primaryColor3;
+  }
+
+  &--image-banner {
+    height: 41.6rem;
+    background-image: url("../../assets/images/about-image-banner.png");
+  }
+
+  &--mission {
+    background-color: $primaryColor3;
+  }
+
+  &--explore {
+    background-color: $primaryColor3;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+  }
+
+  &--booking {
+    background-color: white;
   }
 }
 
@@ -56,6 +83,10 @@
     height: 10rem;
     align-items: center;
   }
+
+  // &--mentor {
+  //   margin-top: 0;
+  // }
 }
 
 .hidden {
@@ -80,25 +111,23 @@
   }
 
   &--search {
-    background: url(../../assets/images/Search.svg) no-repeat
-      $primaryColor3;
+    background: url(../../assets/images/Search.svg) no-repeat $primaryColor3;
     background-position: right 0.8rem center;
 
-    @include tablet {
-    }
+    @include tablet {}
   }
 }
 
 .button {
   font-size: 1.6rem;
   background-color: $primaryColor3;
-  padding: 1.6rem 2.4rem;
+  padding: 0.8rem 2.4rem;
   border-radius: 5rem;
   min-width: max-content;
   cursor: pointer;
   gap: 8px;
 
-  &--hero{
+  &--hero {
     background-color: $primaryColor4;
     color: $primaryColor3;
     width: 19rem;

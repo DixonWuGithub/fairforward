@@ -8,12 +8,14 @@ import Explore from './pages/Explore/Explore';
 import SignUp from "./pages/SignUp/SignUp"
 import Profile from "./pages/Profile/Profile"
 import Footer from "./components/Footer/Footer"
+import Booking from "./pages/Booking/Booking"
 
 
 function App() {
 
 
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [mentor, setMentor] = useState("Patricia Yoo")
 
   return (
     <div className="App">
@@ -22,9 +24,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/about" element={<About />}/>
-        <Route path="/explore" element={<Explore />}/>
-        <Route path="/signup" element={<SignUp />}/>
+        <Route path="/explore" element={<Explore setMentor={setMentor}/>}/>
+        <Route path="/signup" element={<SignUp setIsLoggedIn={setIsLoggedIn}/>}/>
         <Route path="/profile" element={<Profile />}/>
+        <Route path="/booking/" element={<Booking mentor={mentor}/>}/>
       </Routes>
       </BrowserRouter>
       <Footer />
