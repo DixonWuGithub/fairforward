@@ -11,7 +11,11 @@ import homecard2 from "../../assets/images/homecard02.jpg"
 import left from "../../assets/images/left.svg"
 import right from "../../assets/images/right.svg"
 
-function HomePage() {
+function HomePage({setIsLoggedIn}) {
+
+    function handleClick () {
+        setIsLoggedIn(false)
+    }
 
     const customleft = () => {
         return (
@@ -34,7 +38,7 @@ function HomePage() {
                             <h1 className="hero__text">Connect the next generation of indigenous youth with experienced mentors.</h1>
                             <div className="hero__botton-container">
                                 <Link to="/signup">
-                                    <button className="button button--hero">
+                                    <button onClick={handleClick} className="button button--hero">
                                         Join Now
                                     </button>
                                 </Link>

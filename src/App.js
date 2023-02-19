@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp/SignUp"
 import Profile from "./pages/Profile/Profile"
 import Footer from "./components/Footer/Footer"
 import Booking from "./pages/Booking/Booking"
+import SignUpMentee from "./components/SignUpMentee/SignUpMentee"
 
 
 function App() {
@@ -22,10 +23,11 @@ function App() {
       <BrowserRouter>
       <Header isLoggedIn={isLoggedIn}/>
       <Routes>
-        <Route path="/" element={<HomePage />}/>
+        <Route path="/" element={<HomePage setIsLoggedIn={setIsLoggedIn}/>}/>
         <Route path="/about" element={<About />}/>
         <Route path="/explore" element={<Explore setMentor={setMentor}/>}/>
         <Route path="/signup" element={<SignUp setIsLoggedIn={setIsLoggedIn}/>}/>
+        <Route path="/signup/mentee" element={<SignUpMentee setIsLoggedIn={setIsLoggedIn}/>} />
         <Route path="/profile" element={<Profile />}/>
         <Route path="/booking/" element={<Booking mentor={mentor}/>}/>
       </Routes>

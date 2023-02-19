@@ -2,3 +2,41 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/media" as *;
+
+.signup {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__input {
+        width: 45rem;
+        height: 48px;
+        border-radius: 8px;
+        padding: 12px 16px 12px 16px;
+        font-family: 'inter';
+        font-size: 1.6rem;
+        outline: none;
+        border: 1px solid $primaryColor1;
+
+    }
+
+    &__google {
+        margin-top: 3rem;
+    }
+}
+
+.createaccount {
+    margin-top: 3rem;
+    width: 45rem;
+    height: 5rem;
+    border-radius: 8px;
+    padding: 14px 16px 14px 16px;
+    font-family: 'inter';
+    font-size: 1.6rem;
+    color: white;
+    background-color: $primaryColor1;
+    font-weight: normal;
+    cursor: pointer;
+}

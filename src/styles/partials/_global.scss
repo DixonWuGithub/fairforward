@@ -76,6 +76,12 @@
   &--profile-top {
     background-color: $primaryColor3;
   }
+
+  &--signup{
+    background-color: $primaryColor3;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .body-wrap {
@@ -88,9 +94,9 @@
     align-items: center;
   }
 
-  // &--mentor {
-  //   margin-top: 0;
-  // }
+  &--signup{
+    margin-top: 0;
+  }
 }
 
 .hidden {
