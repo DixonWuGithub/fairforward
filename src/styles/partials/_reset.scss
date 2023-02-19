@@ -1,0 +1,87 @@
+@use "./typography";
+@use "./variables" as *;
+@use "./media" as *;
+@use "./mixins" as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: $primaryColor1;
+}
+
+body {
+    color: $primaryColor1;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    font-family: 'inter';
+    padding: 0;
+    margin: 0;
+
+
+    p {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        line-height: 6rem;
+        margin: 0;
+        @include title-padding-mobile;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        line-height: 4.2rem;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+        font-weight: normal;
+        line-height: 2.7rem;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+        font-weight: normal;
+        line-height: 2.2rem;
+        margin: 0;
+    }
+    
+    button {
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 2.0rem;
+        margin: 0;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    text-decoration: none;
+}
+
+footer {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin: 0;
+}

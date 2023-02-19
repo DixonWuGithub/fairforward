@@ -1,0 +1,33 @@
+@use "./variables" as *;
+@use "./media" as *;
+
+@mixin desktop-width-limit {
+  margin: auto;
+  width: 108.4rem; // 1020 px + 2* side paddings for tablet
+}
+
+@mixin breakpoint-margin-limits {
+  padding: 0 $side-padding-mobile;
+  @include tablet {
+    max-width: 108.4rem; // 1020 px + 2* side paddings for tablet
+    padding: 0 $side-padding-tablet;
+    margin: auto;
+  }
+
+  @include desktop {
+    @include desktop-width-limit;
+  }
+}
+
+@mixin title-padding-mobile {
+  margin: 0;
+  padding: 3.2rem 0 1.6rem 0;
+}
+
+@mixin title-padding-tablet {
+  margin: 0;
+  padding: 3.6rem 0 2rem 0;
+}
+
+@mixin status() {
+}
