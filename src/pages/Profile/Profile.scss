@@ -2,3 +2,28 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/media" as *;
+
+
+.profile-top {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
+
+    &__placeholder {
+        height: 56.8rem;
+    }
+}
+
+.profile-bottom {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
+    padding-top: 6.5rem;
+    padding-bottom: 11rem;
+
+    &__placeholder {
+        height: 52.8rem;
+    }
+}
