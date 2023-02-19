@@ -13,7 +13,7 @@ function About() {
                     <div className="about-intro">
                         <img className="about-intro__logo" src={aboutLogo} alt="" />
                         <div className="about-intro__text">
-                            FairForward is a platform that aims to connect indigenous youth with experienced mentors who share their cultural background, in order to address the challenges they face in planning their future careers while staying connected to their roots.
+                        FairForward is a platform that aims to connect indigenous college students with experienced mentors who share their cultural background, in order to address the challenges they face in planning their future careers while staying connected to their roots.
                         </div>
 
                     </div>
@@ -37,10 +37,10 @@ function About() {
                             </div>
                         </div>
                         <h2 className="motivation__supporttitle">
-                            How might we support discouraged indigenous youths and practically help them find a job?
+                        How might we practical support to indigenous college students in order to overcome barriers to employment?
                         </h2>
                         <p className="motivation__supporttext">
-                            FairForward discovered that having empathetic mentors was highly beneficial in improving mentee outcomes. In order to address the educational and informational disparities faced by indigenous youth, FairForward has made the decision to connect these youth with mentors who share their cultural background as well as their professional experience.
+                        FairForward discovered that having empathetic mentors was highly beneficial in improving mentee outcomes. In order to address the educational and informational disparities faced by indigenous college students, FairForward has made the decision to connect these college students with mentors who share their cultural background as well as their professional experience.
                         </p>
 
                     </div>
@@ -55,7 +55,7 @@ function About() {
                         </h2>
                         <img src={missionCard} alt="" className="mission__card" />
                         <p className="mission__text">
-                        Our mission is to provide professional support to the next generation of indigenous youth, helping them navigate their career paths while maintaining their cultural heritage.
+                        Our mission is to provide professional support to the next generation of indigenous college students, helping them navigate their career paths while maintaining their cultural heritage.
                         </p>
                     </div>
                 </div>

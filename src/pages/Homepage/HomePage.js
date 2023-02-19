@@ -35,7 +35,7 @@ function HomePage({setIsLoggedIn}) {
                 <div className="body-wrap">
                     <section className="hero">
                         <div className="hero__left">
-                            <h1 className="hero__text">Connect the next generation of indigenous youth with experienced mentors.</h1>
+                            <h1 className="hero__text">Connect indigenous college students with experienced mentors</h1>
                             <div className="hero__botton-container">
                                 <Link to="/signup">
                                     <button onClick={handleClick} className="button button--hero">
